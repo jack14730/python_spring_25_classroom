@@ -24,12 +24,14 @@ kg_2 = 45
 kg_3 = 15
 kg_4 = 30
 
+# calculate variables
 conversion = 2.20462
 lb_1 = kg_1 * conversion
 lb_2 = kg_2 * conversion
 lb_3 = kg_3 * conversion
 lb_4 = kg_4 * conversion
 
+# print variables values and calculate conversion
 print(f"{kg_1} Kilograms is equal to {lb_1:.2f} pounds")
 print(f"{kg_2} Kilograms is equal to {lb_2:.2f} pounds")
 print(f"{kg_3} Kilograms is equal to {lb_3:.2f} pounds")
