@@ -80,4 +80,4 @@ expenses = (rent + utilities + groceries +
             transportation + health_care + clothing + debt)
 leftover_funds = (budget - expenses)  # calculates how much is left over
 # print of what you have left over after typing each expense in the terminal
-print("Your leftover available funds after expenses is: ", leftover_funds)
+print("Your leftover funds after expenses is: ", leftover_funds)
