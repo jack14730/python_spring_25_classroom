@@ -18,5 +18,5 @@ grade = int(input("Enter your numeric grade:"))
 if grade < 60:
     print("The letter grade is: F")
 
-elif grade >= 60
-print("The letter grade is: D")
+elif grade >= 60:
+    print("The letter grade is: D")
