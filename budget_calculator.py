@@ -65,7 +65,7 @@ debt_percent = (debt / budget) * 100
 
 # total budget spent
 
-print(f"Your rent is %{rent_percent:.1f} of your monthly budget.")
+print(f"Your housing is %{housing_percent:.1f} of your monthly budget.")
 print(f"Your utilities is %{utilities_percent:.1f} of your monthly budget.")
 print(f"Your groceries is %{groceries_percent:.1f} of your monthly budget.")
 print(f"Your transportation is %{
@@ -83,8 +83,8 @@ print(f"Your debt is %{debt_percent:.1f} of your monthly budget.")
 # Money left after expenses
 
 # calculates all of the expenses to give number of how much spent
-expenses = (rent + utilities + groceries +
-            transportation + health_care + clothing + debt)
+expenses = (housing + utilities + groceries +
+            transportation + health_care + personal_care + clothing + debt)
 leftover_funds = (budget - expenses)  # calculates how much is left over
 # print of what you have left over after typing each expense in the terminal
 print("Your leftover available funds after expenses is: ", leftover_funds)
