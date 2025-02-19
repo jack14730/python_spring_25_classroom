@@ -18,34 +18,34 @@ age = int(input("How old are you:"))
 
 
 # if person is or is not allowed to Drive it will show these
-if age <= 15:
-    print("You are not allowed to have a drivers license.")
+if age <= 16:
+    print("You are not eligible to have a drivers license.")
     # ^ if the user puts less than or equal to 15 they will not be allowed to do anything asked on the list
 
-elif age > 15:
-    print("You are allowed to have a drivers license.")
+else:
+    print("You are eligible to have a drivers license.")
 
 
 # if person is or is not allowed to Vote
-if age <= 17:
+if age < 18:
     print("You cannot legally vote.")
     # ^ if the user is less than or equal to 17 they will only be allowed to drive but it will list what they cannot do
 
-elif age > 17:
+else:
     print("You can legally vote.")
 
 
 # if person is or is not allowed to purchase and Drink Alcohol
-if age <= 20:
+if age < 21:
     print("You are not the legal drinking age.")
 
-elif age >= 21:
+else:
     print("You are the legal drinking age.")
 
 
 # if person is or is not allowed for Senior Discount
-if age <= 64:
+if age < 65:
     print("You are not eligible for a senior discount. ")
 
-elif age >= 65:
+else:
     print("You are eligible for a senior discount!")
