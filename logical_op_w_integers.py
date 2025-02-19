@@ -17,11 +17,39 @@
 
 # Get input from user
 num1 = int(input("Enter an integer:"))
-num2 = int(input("Enter another integer: "))
+num2 = int(input("Enter another integer:"))
 
 # and operator
+if num1 and num2 > 0:
+    print("Both numbers are greater than 0: True")
 
-if num1 > 0 and num2 > 0:
-    print("Both Numbers are greater than 0: True")
-elif num1 < 100 and num2 < 100:
-    print("Both Numbers are less than 100?: True")
+else:
+    print("Both numbers are greater than 0: False")
+
+if num1 and num2 > 100:
+    print("Both numbers are greater than 100: True")
+
+else:
+    print("Both numbers are greater than 100: False")
+
+# or operator
+if num1 or num2 < 100:
+    print("Either number is less than 100? True")
+else:
+    print("Either number is less than 100? False")
+
+if num1 or num2 % 2 == 0:
+    print("Either number is even? True")
+else:
+    print("Either number is even? False")
+
+# not operator. For this portion i have incorporated a f strings so that it will output the users integers they have written.
+if not num1 > num2:
+    print(f"{num1} is not greater than {num2}")
+else:
+    print(f"{num1} is greater than {num2}")
+
+if not num1 == num2:
+    print(f"{num1} is not equal to {num2}: True")
+else:
+    print(f"{num1} is not equal to {num2}: False")
