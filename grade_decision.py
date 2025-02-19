@@ -15,32 +15,22 @@ Check to see if the number given is between 0 and 100.
 grade = int(input("Enter your numeric grade:"))
 
 
-# if grade below 60 user letter grade is F
-# if grade 60-69 user letter grade is D
+# I had revised the code in order to make the input not output multiple letter grades.
 if grade < 60:
     print("The letter grade is: F")
 
-elif grade <= 69:
+elif grade < 70:
     print("The letter grade is: D")
 
-
-# if grade is 70-79 user letter grade is C
-if grade < 70:
-    print("The letter grade is: D")
-
-elif grade <= 79:
+elif grade < 80:
     print("The letter grade is: C")
 
-
-# if grade is 80-89 user letter grade is B
-if grade < 80:
-    print("The letter grade is: C")
-
-elif grade <= 89:
+elif grade < 90:
     print("The letter grade is: B")
-
-
-# if grade is 90-100 user letter grade is A
 
 elif grade <= 100:
     print("The letter grade is: A")
+
+else:
+    print("This numeric grade is invalid.")
+# I had also incorporated a else statement in order to make sure that invalid number grades do not show up as a letter grade.
