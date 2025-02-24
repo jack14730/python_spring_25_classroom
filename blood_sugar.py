@@ -3,7 +3,7 @@
         Print the times and the blood sugar on the screen
         calculate and print the average blood sugar
 
-    """
+"""
 
 # variables
 blood_sugar_times = ["Before Breakfast",
