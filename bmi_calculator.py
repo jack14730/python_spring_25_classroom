@@ -22,16 +22,14 @@
 
 
 def main():
-
-
-    # here i am classifying what the weight and height will define.
-weight, height = get_values()
+    weight_lb, height_lb = get_values()
+    bmi = weight / (height * height)
 
 
 def get_values():
+    weight_lb = int(input("Please enter your weight in pounds: "))
+    height_in = int(input("Please enter your height in inches: "))
+    return weight_lb, height_lb
 
-
-weight = int(input("Please enter your weight in pounds: "))
-height = int(input("Please enter your height in inches: "))
 
 main()
