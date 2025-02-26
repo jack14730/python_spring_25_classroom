@@ -34,4 +34,4 @@ total_steps = sum(steps)
 print(f"Total steps: {total_steps}")
 
 average = total_steps / len(steps)
-print(f"Average: {average}")
+print(f"Average: {average:,.2f}")
