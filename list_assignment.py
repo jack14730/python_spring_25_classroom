@@ -19,6 +19,19 @@
 # variables
 
 # lists
+steps = []
+days = ["Sunday", "Monday", "Tuesday",
+        "Wednesday", "Thursday", "Friday", "Saturday"]
 
-day = ["Sunday", "Monday", "Tuesday",
-       "Wednesday", "Thursday", "Friday", "Saturday"]
+# user input
+for day in days:
+    daily_steps = int(input(f"How many steps did you take on {day}? "))
+    steps.append(daily_steps)
+
+# calculations
+
+total_steps = sum(steps)
+print(f"Total steps: {total_steps}")
+
+average = total_steps / len(steps)
+print(f"Average: {average}")
