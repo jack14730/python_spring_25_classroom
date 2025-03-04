@@ -18,7 +18,16 @@
 
 # variables
 
-# lists
-
 day = ["Sunday", "Monday", "Tuesday",
        "Wednesday", "Thursday", "Friday", "Saturday"]
+
+steps = []
+
+# getting user info
+
+steps = int(input(f"How many steps did you take on {day}?: "))
+
+for i in range(len(day)):
+    day = day[i]
+    steps = num_of_steps[i]
+    print(f"{month} has {days} days")
