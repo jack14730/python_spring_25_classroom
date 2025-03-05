@@ -19,8 +19,8 @@
 """
 
 # global constant
-
-
+KILOGRAMS = 0.453592
+METERS = 0.0254
 def main():
     weight_lb, height_lb = get_values()
     bmi = weight / (height * height)
