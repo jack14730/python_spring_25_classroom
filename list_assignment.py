@@ -18,6 +18,21 @@
 
 # variables
 
+<<<<<<< HEAD
+day = ["Sunday", "Monday", "Tuesday",
+       "Wednesday", "Thursday", "Friday", "Saturday"]
+
+steps = []
+
+# getting user info
+
+steps = int(input(f"How many steps did you take on {day}?: "))
+
+for i in range(len(day)):
+    day = day[i]
+    steps = num_of_steps[i]
+    print(f"{month} has {days} days")
+=======
 # lists
 steps = []
 days = ["Sunday", "Monday", "Tuesday",
@@ -35,3 +50,4 @@ print(f"Total steps: {total_steps}")
 
 average = total_steps / len(steps)
 print(f"Average: {average:,.2f}")
+>>>>>>> 269cfbe02473f70b543012a37e02bcb4d00278c4
