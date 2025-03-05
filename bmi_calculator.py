@@ -21,15 +21,29 @@
 # global constant
 KILOGRAMS = 0.453592
 METERS = 0.0254
+
+
 def main():
-    weight_lb, height_lb = get_values()
+    weight_lb, height_in = get_values()
+    height = METERS * height_in
+    weight = KILOGRAMS * weight_lb
     bmi = weight / (height * height)
+    print(f"Your BMI is {bmi:.2f}")
 
 
 def get_values():
     weight_lb = int(input("Please enter your weight in pounds: "))
     height_in = int(input("Please enter your height in inches: "))
-    return weight_lb, height_lb
+    return weight_lb, height_in
+
+
+def category():
+    if bmi < 18.5:
+        print("Underweight")
+    elif bmi < 24.9:
+        print("Normal")
+    elif bmi > 25:
+        print("Overweight")
 
 
 main()
